@@ -1,0 +1,240 @@
+{
+    "filename": "5488_MetaGPT_Meta_Programming_ (2) (1).pdf",
+    "original_size": 16911937,
+    "sha256": "76d733b2c9e04ea0ade6c845c55b52bb784c894358f872e63733aaa65fb69b39",
+    "block_size": 524288,
+    "cipher": "AES-256-GCM",
+    "blocks": [
+        {
+            "block_index": 0,
+            "block_file": "block_0.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "647e049ffbab70a318bba5993b34bb47fe2dd9c751cca22582b3c46d437666fa"
+        },
+        {
+            "block_index": 1,
+            "block_file": "block_1.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "6c0454b20c633ed553ff44a9ef9e2b5f68c911332a4596dda0613312a61c69ed"
+        },
+        {
+            "block_index": 2,
+            "block_file": "block_2.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "9b704c56f467b8c050f8074c5ac3ded8ecfb3b557f51dce456534963ff961215"
+        },
+        {
+            "block_index": 3,
+            "block_file": "block_3.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "b3d7f3c713fa3010cd7b09bd943e78b640ae0204e527a7adad6f393968303aa9"
+        },
+        {
+            "block_index": 4,
+            "block_file": "block_4.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "ae1104ad498b36b54b2f27f86a96224a5dbef28e583ad0b278debd62acbd994e"
+        },
+        {
+            "block_index": 5,
+            "block_file": "block_5.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "3578dd8a4ee323a45e9875a0c70683ff236722be4ed4bc385e71a05f2b54e624"
+        },
+        {
+            "block_index": 6,
+            "block_file": "block_6.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "4904214579c20f9c4ab200ff84ec6d4c099492aaf5e6b22bb0093b5e74b0aad2"
+        },
+        {
+            "block_index": 7,
+            "block_file": "block_7.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "729259e10e4eb9395d0c58221780258acbe67bd9a40274d77845cbb6793270aa"
+        },
+        {
+            "block_index": 8,
+            "block_file": "block_8.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "2d7c7536068c685c8d580643d0b6c61a6cffbc1efd696bc3b9410817131cb78b"
+        },
+        {
+            "block_index": 9,
+            "block_file": "block_9.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "428211017cc0a2d3c159209f99f1e7a6512a3276619142dceac976826ffc4fce"
+        },
+        {
+            "block_index": 10,
+            "block_file": "block_10.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "c37192cb1bfbe401752592d14c55bf6cd13b98e72721a807fc7437c67e96f1e3"
+        },
+        {
+            "block_index": 11,
+            "block_file": "block_11.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "a20f88dfc21d6752ff359d64ae3ccda7dcc9a47c1854077ccf1e7a940db1fb76"
+        },
+        {
+            "block_index": 12,
+            "block_file": "block_12.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "80dfff79040d77f43dad7b541f1b0955491bb3a304e66a01422d6bd234d2ce20"
+        },
+        {
+            "block_index": 13,
+            "block_file": "block_13.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "61bb560cf8fec6fa766407979ff64ab6ca7d9efdd062cd0f546ac0a3f9f86bba"
+        },
+        {
+            "block_index": 14,
+            "block_file": "block_14.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "e6d8844457fe392fc16e3f8056ac0c04c1212712d85f431ce2cd0cc073396edd"
+        },
+        {
+            "block_index": 15,
+            "block_file": "block_15.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "41d53c5d020fcbd9e99e8399bbe5426670360ec9ff76a37d3abde2b04e090321"
+        },
+        {
+            "block_index": 16,
+            "block_file": "block_16.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "b360b1af5c7d4b19ef8059aa3c01cd50aba5c0627b20d61ad107c75d269b8494"
+        },
+        {
+            "block_index": 17,
+            "block_file": "block_17.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "a9713efb22406c795ec1da97c03f8d528519908002259bfa8e2d307a6a8028ca"
+        },
+        {
+            "block_index": 18,
+            "block_file": "block_18.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "af71b29a422d6a958c54182ed81217bcda488f27fe2cb58aad76c13fd40d47e3"
+        },
+        {
+            "block_index": 19,
+            "block_file": "block_19.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "b754a114ed9e5b6a0c8ae7862fb1bb3013b84f835e626a8a91e04742c690ea8e"
+        },
+        {
+            "block_index": 20,
+            "block_file": "block_20.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "b1966a3020183f5027db751e34995159144bf70f709062221d93b360c16f3772"
+        },
+        {
+            "block_index": 21,
+            "block_file": "block_21.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "e347966f21e169601121cf2319d2f65153b5f6026fff451398c430760855168f"
+        },
+        {
+            "block_index": 22,
+            "block_file": "block_22.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "91b69d6b402892ee89b65303494a6c4abc24c63be43fc5bb8542cee1a609ee47"
+        },
+        {
+            "block_index": 23,
+            "block_file": "block_23.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "261e7f9fc047eb56fc420400ddcb2f3ff752e8ce98e42649765fe8d7c8517f71"
+        },
+        {
+            "block_index": 24,
+            "block_file": "block_24.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "37beb3e5cddd1722b6d2065cddd6727ea5f701a4d33528bd6853aae9879a97df"
+        },
+        {
+            "block_index": 25,
+            "block_file": "block_25.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "1df9f82455ae55a553591314b3437744e14bedd6c7349eae501e94d26908a890"
+        },
+        {
+            "block_index": 26,
+            "block_file": "block_26.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "cf63f220b5dc08dbafcbff3f437b34a307cbeb38fce1ffc11aee8f393cd8911e"
+        },
+        {
+            "block_index": 27,
+            "block_file": "block_27.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "a82a96d31cc7c8209fceab189bc82a44aef0bd51acde57f02d037dfc6854c398"
+        },
+        {
+            "block_index": 28,
+            "block_file": "block_28.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "6f920946c593d926478c6471c04001c19f8341d19198ea0cd61ac9e4ae4ef816"
+        },
+        {
+            "block_index": 29,
+            "block_file": "block_29.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "5ff5c089d776b2d5836dd4fc4b98fd4e2fd985189c5ed1de773b31957bc14cab"
+        },
+        {
+            "block_index": 30,
+            "block_file": "block_30.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "b424c186c8ec0ee687c06774c26b0683a7977ac468e4a2f0b8a3dd9b2fc419ed"
+        },
+        {
+            "block_index": 31,
+            "block_file": "block_31.enc",
+            "size": 524316,
+            "plain_size": 524288,
+            "block_sha256": "da1435c3a0e48539735e05ceb1a428a0e6348d81de95d8d4e4966fb7b2cabeb6"
+        },
+        {
+            "block_index": 32,
+            "block_file": "block_32.enc",
+            "size": 134749,
+            "plain_size": 134721,
+            "block_sha256": "f5e780795be24227a08a0480fad48212449edd559531690cb01df7bce465fcac"
+        }
+    ]
+}

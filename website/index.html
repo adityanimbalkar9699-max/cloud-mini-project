@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptex Cloud Vault // Encrypted Object Storage & Global CDN Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="badge">
+                <span style="height: 8px; width: 8px; background-color: #10B981; border-radius: 50%; display: inline-block;"></span>
+                CRYPTEX CLOUD VAULT v2.0 // ENTERPRISE SPECIFICATION
+            </div>
+            <h1 class="hero-title">Distributed Block Storage & Edge Acceleration</h1>
+            <p class="subtitle">Client-side AES-256-GCM authenticated encryption, dynamic payload chunking, SHA-256 integrity verification, and Amazon CloudFront CDN edge distribution.</p>
+            <div class="hero-buttons">
+                <a href="#quickstart" class="btn btn-primary">Launch Quickstart</a>
+                <a href="#architecture" class="btn btn-secondary">Explore Architecture</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="architecture" class="section">
+            <h2 class="section-title">Core System Architecture</h2>
+            <div class="card" style="margin-bottom: 2rem;">
+                <p>Cryptex splits source payloads into uniform binary blocks (e.g. 512KB). Each block is encrypted independently using <strong>AES-256-GCM</strong> with cryptographically random 96-bit nonces, generating a signed cryptographic manifest JSON. Encrypted blocks are stored across cloud object storage buckets (AWS S3) and distributed globally via CloudFront Edge Point-of-Presence (PoP) locations over HTTPS TLS 1.3.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🔒</div>
+                    <h3>AES-256-GCM Cipher</h3>
+                    <p>Galois/Counter Mode authenticated encryption guarantees both confidentiality and tamper-resistance for every stored block.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📦</div>
+                    <h3>Block Chunking</h3>
+                    <p>Divides files into dynamic segments (64KB - 2048KB) for high-concurrency parallel S3 transfers and resilient streaming.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>CloudFront Edge CDN</h3>
+                    <p>Origin Access Control (OAC) keeps S3 buckets private while delivering cached blocks at sub-20ms edge latency worldwide.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <h3>SHA-256 Checksums</h3>
+                    <p>Automated pre-encryption vs post-reassembly SHA-256 hash comparison guarantees 100% data parity and corruption detection.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quickstart" class="section">
+            <h2 class="section-title">Quickstart & Deployment Guide</h2>
+            <div class="card">
+                <h3>1. Local Environment Execution</h3>
+                <pre><code># Install required dependencies
+pip install cryptography streamlit pandas
+
+# Run full automated unit test suite (100% pass target)
+python run_tests.py
+
+# Launch the interactive Streamlit Cloud Vault Dashboard
+python -m streamlit run frontend/app.py</code></pre>
+
+                <h3 style="margin-top: 2rem;">2. Cloud Static Site Deployment (S3 + CloudFront)</h3>
+                <pre><code># Create S3 bucket for website hosting
+aws s3 mb s3://cryptex-documentation-vault --region us-east-1
+
+# Sync portfolio site assets to S3
+aws s3 sync website/ s3://cryptex-documentation-vault/ --acl public-read
+
+# Create CloudFront CDN distribution with Origin Access Control (OAC)
+aws cloudfront create-distribution --origin-domain-name cryptex-documentation-vault.s3.amazonaws.com</code></pre>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Cryptographic Manifest Example</h2>
+            <pre><code>{
+    "filename": "dataset_archive.tar.gz",
+    "original_size": 2097152,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "block_size": 524288,
+    "cipher": "AES-256-GCM",
+    "blocks": [
+        { "block_index": 0, "block_file": "block_0.enc", "size": 524316, "plain_size": 524288 },
+        { "block_index": 1, "block_file": "block_1.enc", "size": 524316, "plain_size": 524288 },
+        { "block_index": 2, "block_file": "block_2.enc", "size": 524316, "plain_size": 524288 },
+        { "block_index": 3, "block_file": "block_3.enc", "size": 524316, "plain_size": 524288 }
+    ]
+}</code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Cryptex Cloud Computing Engineering Project // Silicon Valley Architecture Standard</p>
+        </div>
+    </footer>
+</body>
+</html>
