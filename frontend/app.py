@@ -51,8 +51,8 @@ st.markdown(f"""
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
     /* Global Dark Glass Canvas */
-    .stApp {{
-        background: linear-gradient(rgba(9, 13, 22, 0.92), rgba(9, 13, 22, 0.97)), url('data:image/jpeg;base64,{bg_base64}');
+    .stApp, [data-testid="stAppViewContainer"] {{
+        background: linear-gradient(rgba(9, 13, 22, 0.6), rgba(9, 13, 22, 0.8)), url('data:image/jpeg;base64,{bg_base64}');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
