@@ -51,9 +51,16 @@ st.markdown(f"""
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
     /* Global Dark Glass Canvas */
-    .stApp, [data-testid="stAppViewContainer"] {{
-        background: url('data:image/jpeg;base64,{bg_base64}') no-repeat center center fixed !important;
+    body, html {{
+        background-image: url('data:image/jpeg;base64,{bg_base64}') !important;
         background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+    }}
+
+    .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"], [data-testid="stApp"] {{
+        background: transparent !important;
         background-color: transparent !important;
         color: #C9D1D9;
         font-family: 'Inter', sans-serif;
