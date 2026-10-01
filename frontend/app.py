@@ -35,15 +35,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Load premium_bg.jpg background image safely
-bg_base64 = ""
-img_path = os.path.join(PROJECT_ROOT, "premium_bg.jpg")
-if os.path.exists(img_path):
-    try:
-        with open(img_path, "rb") as img_f:
-            bg_base64 = base64.b64encode(img_f.read()).decode("utf-8")
-    except Exception:
-        bg_base64 = ""
+from bg_data import BG_BASE64 as bg_base64
 
 # Ultra-Premium Silicon Valley Glassmorphism Theme & Custom Styling
 st.markdown(f"""
@@ -51,19 +43,20 @@ st.markdown(f"""
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap');
 
     /* Global Dark Glass Canvas */
-    body, html {{
+    body, html, .stApp, [data-testid="stAppViewContainer"] {{
         background-image: url('data:image/jpeg;base64,{bg_base64}') !important;
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
-    }}
-
-    .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"], [data-testid="stApp"] {{
-        background: transparent !important;
         background-color: transparent !important;
         color: #C9D1D9;
         font-family: 'Inter', sans-serif;
+    }}
+
+    [data-testid="stMain"], [data-testid="stHeader"] {{
+        background: transparent !important;
+        background-color: transparent !important;
     }}
 
     [data-testid="stHeader"] {{
