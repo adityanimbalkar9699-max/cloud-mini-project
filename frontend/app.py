@@ -35,9 +35,9 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Load OIP.jpg background image safely
+# Load premium_bg.jpg background image safely
 bg_base64 = ""
-img_path = os.path.join(PROJECT_ROOT, "OIP.jpg")
+img_path = os.path.join(PROJECT_ROOT, "premium_bg.jpg")
 if os.path.exists(img_path):
     try:
         with open(img_path, "rb") as img_f:
