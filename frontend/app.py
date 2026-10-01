@@ -52,12 +52,15 @@ st.markdown(f"""
 
     /* Global Dark Glass Canvas */
     .stApp, [data-testid="stAppViewContainer"] {{
-        background: linear-gradient(rgba(9, 13, 22, 0.6), rgba(9, 13, 22, 0.8)), url('data:image/jpeg;base64,{bg_base64}');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+        background: url('data:image/jpeg;base64,{bg_base64}') no-repeat center center fixed !important;
+        background-size: cover !important;
+        background-color: transparent !important;
         color: #C9D1D9;
         font-family: 'Inter', sans-serif;
+    }}
+
+    [data-testid="stHeader"] {{
+        background: rgba(0,0,0,0) !important;
     }}
 
     @keyframes pulse-green {{
